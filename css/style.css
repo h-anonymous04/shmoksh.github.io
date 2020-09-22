@@ -8219,7 +8219,7 @@ h1, h2, h3, h4, h5,
   #sidebar ul.components {
     padding: 0; }
   #sidebar ul li {
-    font-size: 16px; }
+    font-size: 14px; }
     #sidebar ul li > ul {
       margin-left: 10px; }
       #sidebar ul li > ul li {
@@ -8302,7 +8302,6 @@ a[data-toggle="collapse"] {
 #content {
   width: 100%;
   padding: 0;
-  min-height: 100vh;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
@@ -8365,4 +8364,11 @@ a[data-toggle="collapse"] {
 }
 .profile img{
   border-radius: 50px;
+}
+.hire_hover:hover{ 
+  background-color: white; 
+  color: darkorange;
+}
+.workex{
+  /* display: none; */
 }

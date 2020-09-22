@@ -31,10 +31,10 @@
 	              <a href="#"><span class="fa fa-user mr-3" style="color: darkorange;"></span> About</a>
 			  </li>
 			  <li>
-				<a href="#"><span class="fa fa-code mr-3" style="color: darkorange;"></span> Work Experience</a>
+				<a href="#" onclick="showWork()"><span class="fa fa-code mr-3" style="color: darkorange;"></span> Work Experience</a>
 				</li>
 	          <li>
-              <a href="#"><span class="fa fa-briefcase mr-3" style="color: darkorange;"></span> Projects</a>
+              <a href="#" onclick="showProjects()"><span class="fa fa-briefcase mr-3" style="color: darkorange;"></span> Projects</a>
 	          </li>
 	          <li>
               <a href="#"><span class="fa fa-sticky-note mr-3" style="color: darkorange;"></span> Resume</a>
@@ -65,25 +65,79 @@
 		</div>
 		</nav>
 	
-		<div class="container">
-			<div class="col-md-1"></div>
-		<div class="col-md-6">
-			<div id="content" class="p-4 p-md-5 pt-5">
-				<p class="mb-4" style="font-size: 48px;color: darkcyan; font-weight: 600; margin-top: 5% ;">Moksh Shah</p>
-				<p style="text-align: justify;text-justify: auto; font-size: 16px;">I'm pursuing masters in computer science at California State University, Sacramento. Having 1.5+ years of experience as Software Engineer, seeking an Internship for Spring/Summer 2021.</p>
+		<div class="container intro">
+			<div class="row">
+				<div class="col-md-6">
+					<div id="content" class="p-4 p-md-5 pt-5">
+						<p class="mb-4" style="font-size: 48px;color: darkcyan; font-weight: 600; margin-top: 5% ;">Moksh Shah</p>
+						<p style="text-align: justify;text-justify: auto; font-size: 16px;">I'm pursuing masters in computer science at California State University, Sacramento. Having 1.5+ years of experience as Software Engineer, seeking an Internship for Spring/Summer 2021.</p>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="profile col-md-4">
+					<img style="margin-top: 15%; margin-left: 7%;" src="Profile.jpg" height="320px" width="280px">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<button style="color: white; background-color: darkorange; border: none; margin-left: 30%; margin-top: 10%;" type="button" class="btn btn-primary hire_hover">Hire Me!!</button>
+				</div>
+			</div>
 			</div>
 		</div>
-		<div class="profile col-md-2">
-			<img src="Profile.jpg" height="300px" width="250px">
-		</div>
-
-		</div>
-		
-		</div>
-		<div class="container workex">
-			<h1 style="margin-left: 7%; color: darkcyan;"> # Work Experience</h1>
-			
-			  
+		<div class="workex">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div id="content" class="p-4 p-md-5 pt-5">
+							<p class="mb-4" style="font-size: 32px;color: darkcyan; font-weight: 600; margin-top: 5% ;"># Work Experience</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<h3 style="font-family: 'Montserrat', sans-serif ;">Software Engineer @ Turabit Solution Pvt. Ltd.</h3>
+						<p><i>July 2018 - April 2019</i></p>
+					</div>
+					<div class="col-md-4">
+						<img src="turabit.png" height="80px" width="350px">	
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-9">
+						<ul>
+						<li>	Developed an automated chatbot solving IT help desk services that reduce 80% of mundane tasks.</li>
+						<li>	Integrated Business Email Management feature using Google Suite APIs and Software Management by creating automate scripting on various platforms like Skype, Facebook Messenger.</li>
+						<li>	Established a configurable client portal application to create customizable chatbots for clients in 5 mins.</li>
+						<li>	Redesigned database of the existing system to scale the product with 4 new features.</li>
+						</ul>
+					</div>
+				</div>
+				<br>
+				<br>
+				<!-- 2nd Experience -->
+				<div class="row">
+					<div class="col-md-8">
+						<h3 style="font-family: 'Montserrat', sans-serif ;">Python Intern @ Conceptserve Technologies</h3>
+						<p><i>Jan 2018 - July 2019</i></p>
+					</div>
+					<div class="col-md-4">
+						<img src="conceptserve.png" style="margin-left: 20%; margin-top: -5%" height="140px" width="200px">	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-9">
+						<ul>
+						<li>	Implemented MVC architecture and create a web portal like social media where users can create groups,
+						can join group, post, and make comments with having CRUD functionality. </li>
+						<li>	Validation of users while signing up and logging in from the database and maintain their sessions.</li>
+						<li>	Perform unit testing and system integration testing on 2 projects and created 20% more use-cases.</li>
+						<li>	Worked with multiple tools like SCRUM, Slack, Chrome Dev Ops to improve the work efficiency and traceability.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="container projects">
 			<h1 style="margin-left: 7%; color: darkcyan;"> # Projects</h1>
@@ -133,6 +187,20 @@
 				  </div>
 			</div>
 		</div>
+	<script>
+		function showAbout(){}
+		function showWork(){
+			var w = document.getElementsByClassName('workex');
+			w[0].style.display = 'block';
+		}
+		function showProjects(){
+			var w = document.getElementsByClassName('projects');
+			w[0].style.display = 'block';
+		}
+		function showResume(){}
+		function showHire(){}
+
+	</script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
