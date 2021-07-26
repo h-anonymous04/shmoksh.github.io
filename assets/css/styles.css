@@ -165,111 +165,136 @@ a {
   body {
     margin: 0;
   }
+
   .header {
     height: calc(var(--header-height) + 1rem);
   }
+
   .header__logo, .header__toggle {
     display: none;
   }
+
   .nav {
     width: 100%;
   }
+
   .nav__content {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+
   .nav__perfil {
     flex-direction: row;
     text-align: initial;
     margin-bottom: 0;
   }
+
   .nav__img {
     width: 40px;
     height: 40px;
     margin-right: .5rem;
     margin-bottom: 0;
   }
+
   .nav__img img {
     width: 46px;
   }
+
   .nav__name {
     color: var(--dark-color);
   }
+
   .nav__list {
     display: flex;
     align-items: center;
   }
+
   .nav__item {
     margin: 0 1.5rem;
     padding: 1.4rem 0;
   }
+
   .nav__link {
     color: var(--dark-color);
   }
+
   .nav__link:hover {
     color: var(--first-color);
   }
+
   /*Active link new color*/
   .active {
     color: var(--first-color);
   }
 
-@media screen and (min-width: 1024px) {
-  .bd-grid {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: 1024px) {
+    .bd-grid {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-}
-.background-image{ 
-    background: url(../img/Profile.png) no-repeat center center fixed; 
+  .background-image {
+    background: url(../img/Profile.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-.social-links{
-  margin-top:150px;
-}
-.profile-img img{
-  margin-top: -50px;
-}
-.about-me, .profile, .projects{
-  margin-top:100px;
-}
-.contact{
-  margin-top:150px;
-}
-.about-content{
-  margin-top: 100px;
-  text-align: justify;
-}
-.card-skills{
-  padding: 50px 0px 0px 0px;
-  
-}
-.card{
-  border: none;
-  box-shadow: 1px 1px 4px lightslategrey;
-}
-#timeline-5ff5c62ddac13, #timeline-5ff5c62ddaec3{
-  /* font-weight: lighter; */
-  color: grey;
-}
-.item-company{
-  color: green;
-}
-.item-title{
-  color: rgb(147, 116, 75);
-}
+  }
 
-.project-card{
-  padding: 50px 0px 0px 0px;
-}
+  .social-links {
+    margin-top: 150px;
+  }
 
-.list-inline li{
-  font-size: 2rem;
-}
-.contact-links{
-  margin-top: 50px;
+  .profile-img img {
+    margin-top: -50px;
+  }
+
+  .about-me, .profile, .projects {
+    margin-top: 100px;
+  }
+
+  .contact {
+    margin-top: 150px;
+  }
+
+  .about-content {
+    margin-top: 100px;
+    text-align: justify;
+  }
+
+  .card-skills {
+    padding: 50px 0px 0px 0px;
+
+  }
+
+  .card {
+    border: none;
+    box-shadow: 1px 1px 4px lightslategrey;
+  }
+
+  #timeline-5ff5c62ddac13, #timeline-5ff5c62ddaec3 {
+    /* font-weight: lighter; */
+    color: grey;
+  }
+
+  .item-company {
+    color: green;
+  }
+
+  .item-title {
+    color: rgb(147, 116, 75);
+  }
+
+  .project-card {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .list-inline li {
+    font-size: 2rem;
+  }
+
+  .contact-links {
+    margin-top: 50px;
+  }
 }
